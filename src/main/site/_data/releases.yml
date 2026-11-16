@@ -1,3 +1,160 @@
+- version: 5.2.0
+  date: 2026-11-16
+  tag: v5.2.0
+  issues: https://github.com/citrusframework/citrus/issues/
+  stories: https://github.com/citrusframework/citrus/issues/
+  changes:
+    - title: Port Citrus JBang CLI from Picocli to Aesh
+      id: 1574
+      type: add
+      author: asuruceanu
+    - title: Add container listener for lifecycle callbacks of ActionContainers
+      id: 1936
+      type: add
+      author: tschlat
+    - title: Report nested action execution of test action containers
+      id: 1938
+      type: add
+      author: tschlat
+    - title: Support Cucumber suite hooks, DocString/DataTable steps and parallel scenarios
+      id: 1889
+      type: add
+      author: asuruceanu
+    - title: Leverage Cucumber 8 glue selection, package-private glue and named hooks
+      id: 1874
+      type: add
+      author: asuruceanu
+    - title: Add autoSetProperties option to Camel CLI run action
+      id: 1882
+      type: add
+      author: asuruceanu
+    - title: Complete HTTP YAML/XML DSL parity
+      id: 1919
+      type: add
+      author: asuruceanu
+    - title: Describe catalog metadata and reject unknown YAML actions
+      id: 1918
+      type: add
+      author: asuruceanu
+    - title: Summarize binary bodies in HTTP logging interceptors
+      id: 896
+      type: add
+      author: asuruceanu
+    - title: Detect endpoint dependencies from createEndpoint test actions
+      id: 1852
+      type: add
+      author: christophd
+    - title: Report final actions in dedicated finally section
+      id: 1851
+      type: add
+      author: asuruceanu
+    - title: Simplify messaging endpoint definitions in YAML and XML DSL
+      id: 1888
+      type: add
+      author: christophd
+    - title: Use colon delimiter for test action names in schema aggregate catalog
+      id: 1850
+      type: add
+      author: christophd
+    - title: Resolve reporter output directory lazily from settings
+      id: 1825
+      type: add
+      author: asuruceanu
+    - title: Camel verify action finds already-running integrations by name
+      id: 1970
+      type: add
+      author: christophd
+    - title: Add --skip-plugins option to CamelRunIntegrationAction
+      id: 1957
+      type: add
+      author: christophd
+    - title: Add test variable metadata to @SchemaType and generated schemas
+      id: 1973
+      type: add
+      author: christophd
+    - title: Minify generated JSON schema files to reduce artifact size
+      id: 1981
+      type: add
+      author: christophd
+    - title: Report skipped tests in JUnit XML report
+      id: 1319
+      type: add
+      author: officialasishkumar
+    - title: Accept Camel EndpointProducerBuilder in CamelExchangeActionBuilder
+      type: add
+      author: christophd
+    - title: Use colon-separated action group hierarchy for infra action names
+      id: 1849
+      type: fix
+      author: christophd
+    - title: Resolve SQL script paths by prefix (classpath/file/URL)
+      id: 1174
+      type: fix
+      author: asuruceanu
+    - title: Execute all configured SQL script resources in declaration order
+      id: 701
+      type: fix
+      author: asuruceanu
+    - title: Detect endpoints regardless of YAML section ordering
+      id: 1853
+      type: fix
+      author: christophd
+    - title: Make static lookup caches thread-safe on first use
+      id: 1878
+      type: fix
+      author: asuruceanu
+    - title: Resolve header validators outside the lookup lock to avoid deadlock
+      id: 1884
+      type: fix
+      author: asuruceanu
+    - title: Add auto-create-queue attribute to DirectEndpointType in XSD
+      id: 1887
+      type: fix
+      author: asuruceanu
+    - title: Add playwright dependency to schema generator
+      id: 1913
+      type: fix
+      author: asuruceanu
+    - title: Resolve actual bound HTTP server port for dynamic ports
+      id: 1960
+      type: fix
+      author: asuruceanu
+    - title: Fix dispatcher servlet configuring beans from parent context
+      id: 1974
+      type: fix
+      author: asuruceanu
+    - title: Make ZipMessage payload serialization deterministic
+      id: 1976
+      type: fix
+      author: asuruceanu
+    - title: Fix gRPC idle timeout and GraphQL test port issues
+      id: 1880
+      type: fix
+      author: asuruceanu
+    - title: Run Cucumber TestNG unit tests only once
+      id: 1871
+      type: fix
+      author: asuruceanu
+    - title: Migrate Cucumber runtime to JUnit Platform engine
+      id: 1858
+      type: update
+      author: asuruceanu
+    - title: Migrate cucumber-steps modules to JUnit Platform engine
+      id: 1860
+      type: update
+      author: asuruceanu
+    - title: Migrate tests from TestNG to JUnit Jupiter
+      id: 1873
+      type: update
+      author: asuruceanu
+    - title: Migrate date functions from legacy Calendar to java.time
+      id: 1864
+      type: update
+      author: bbortt
+    - title: Update dependency versions
+      type: update
+      author: christophd
+
 - version: 5.1.0
   date: 2026-10-19
   tag: v5.1.0
