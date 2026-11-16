@@ -57,7 +57,7 @@ look like this:
 
 ```properties
 # Password is "admin"
-ftpserver.user.citrus.userpassword=21232F297A57A5A743894A0E4A801FC3
+ftpserver.user.citrus.userpassword=<credential-secret-hash>
 ftpserver.user.citrus.homedirectory=target/ftp/user/citrus
 ftpserver.user.citrus.enableflag=true
 ftpserver.user.citrus.writepermission=true

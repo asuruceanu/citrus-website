@@ -59,7 +59,7 @@ public class MailSessionBean {
     private String host = "localhost";
     private String from = "employee-registry@example.com";
     private String username = "employee-registry@example.com";
-    private String password = "secretpw";
+    private String password = "changeit";
 
     public void sendMail(String to, String subject, String body) {
         Properties props = new Properties();

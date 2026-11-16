@@ -364,7 +364,7 @@ quarkus.mailer.host=localhost
 quarkus.mailer.port=2222
 
 quarkus.mailer.username=foodmarket
-quarkus.mailer.password=secr3t
+quarkus.mailer.password=changeit
 quarkus.mailer.start-tls=OPTIONAL
 ```
 

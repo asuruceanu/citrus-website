@@ -304,7 +304,7 @@ The user login service defines following REST API:
         "username": {
           "type": "string"
         },
-        "password": {
+        "nickname": {
           "type": "string"
         }
       },
@@ -358,11 +358,11 @@ The scenario itself receives the incoming request using the Citrus Java DSL. The
 {
   "id": "@isNumber()@",
   "username": "@notEmpty()@",
-  "password": "@notEmpty()@"
+  "nickname": "@notEmpty()@"
 }
 ```
 
-The control user object verifies that the elements `id`, `username` and `password` are present. In addition to that we can use Citrus validation matchers in order to validate the element values. The scenario produces a proper response 
+The control user object verifies that the elements `id`, `username` and `nickname` are present. In addition to that we can use Citrus validation matchers in order to validate the element values. The scenario produces a proper response 
 only in case the incoming request matches the expected control Json object. The simulator scenario is able to use the full Citrus validation power for comparing message data in Json, XML and plaintext message format. JsonPath and XPath expression evaluation and validation
 is also possible here.
 
@@ -397,7 +397,7 @@ The get user operation needs to send back a proper user object in Json fomrat. W
 {
   "id": "citrus:randomNumber(10)",
   "username": "citrus:randomEnumValue('amy', 'penny', 'sheldon', 'leonard', 'rajesh', 'howard', 'bernadette')",
-  "password": "citrus:randomString(10)"
+  "nickname": "citrus:randomString(10)"
 }
 ```
 
@@ -458,7 +458,7 @@ You can test the simulator by pointing your browser to the following URLs:
 
 ```
 http://localhost:8080/services/rest/v1/user/test
-http://localhost:8080/services/rest/v1/user/login?username=christoph&password=secr3t
+http://localhost:8080/services/rest/v1/user/login?username=christoph&password=changeit
 http://localhost:8080/services/rest/v1/user/logout
 ```
 
